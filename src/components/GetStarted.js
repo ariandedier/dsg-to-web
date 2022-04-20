@@ -13,6 +13,9 @@ const GetStarted = () => {
       <Form>
             <div className='title'>
             <h1>Get started with a free quotation.</h1>
+            <h3>If you would like an estimate, please fill in the form at the bottom. We would<br/>
+            be happy to work with you.</h3>
+            <h2>Pricing: $800 to $1500 per page depending on complexity of pages.</h2>
             </div>
             <div className='places'>
                 <h3>Your Name*</h3>
@@ -48,6 +51,7 @@ const GetStarted = () => {
 
 const Container = styled.div`
     margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -59,13 +63,33 @@ const Container = styled.div`
     background: rgb(226,240,249);
     background: linear-gradient(180deg, rgba(226,240,249,1) 0%, rgba(248,244,241,1) 70%);
 `
+const Title = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    color: #272E41;
+
+    h1{
+        line-height: 50px;
+        font-size: 50px;
+    }
+    h3{
+        margin-top: -10px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        
+      }
+    
+`
+
 const Form = styled.div`
     font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 500px;
-    height: 720px;
+    width: 700px;
+    height: 820px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -75,6 +99,12 @@ const Form = styled.div`
         align-self: center;
         h1{
         font-size: 22px;
+        }
+        h3{
+          font-weight: 400;
+        }
+        h2{
+          font-size: 15px;
         }
     }
 
@@ -98,6 +128,25 @@ const Form = styled.div`
             background-color: #f3f3f3;
         }
     }
+`
+
+const Button = styled.button`
+  cursor: pointer;
+  height:10px;
+  background-color: #F9CB17;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 700;
+  line-height: 0px;
+  transition: ease-out 0.7s;
+  transition: 1s;
+  margin-top: 10px;
+  font-family : inherit;
+  font-size: 1em;
+  :hover{
+    background: rgb(249,203,23);
+background: linear-gradient(170deg, rgba(249,203,23,1) 0%, rgba(255,238,174,1) 70%);   }
 `
 
 export default GetStarted

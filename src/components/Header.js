@@ -37,6 +37,7 @@ const Head = styled.div`
   color: #012622;
 
   div.logo{
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap:5px;

@@ -97,23 +97,17 @@ const Main = () => {
   )
 }
 
-const Details = styled.div`
-    font-family: 'DM Sans', sans-serif;
+const Container = styled.div`
     display: flex;
-    gap:100px;
-
-    div.title{
-        display: flex;
-        align-items: center;
-        gap:20px;
-        h2{
-            font-weight: 500;
-        }
-    }
-    h3{
-        margin: -10px;
-        font-weight: 400;
-    }
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 1600px;
+    height: 1100px;
+    background: rgb(226,240,249);
+    background: linear-gradient(180deg, rgba(226,240,249,1) 0%, rgba(248,244,241,1) 70%);
 `
 
 const TitleForm = styled.div`
@@ -121,23 +115,19 @@ const TitleForm = styled.div`
     padding: 40px;
 `
 
-const Button = styled.button`
-  cursor: pointer;
-  height:10px;
-  background-color: #F9CB17;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  font-weight: 700;
-  line-height: 0px;
-  transition: ease-out 0.7s;
-  transition: 1s;
-  margin-top: 10px;
-  font-family : inherit;
-  font-size: 1em;
-  :hover{
-    background: rgb(249,203,23);
-background: linear-gradient(170deg, rgba(249,203,23,1) 0%, rgba(255,238,174,1) 70%);   }
+const Text = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    color: #272E41;
+    h1{
+        line-height: 50px;
+        font-size: 50px;
+    }
+    h3{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        }
 `
 
 const Form = styled.div`
@@ -181,32 +171,42 @@ const Form = styled.div`
     }
 `
 
-const Text = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 200px;
-    color: #272E41;
-    h1{
-        line-height: 50px;
-        font-size: 50px;
-    }
-    h3{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 400;
-        }
+const Button = styled.button`
+  cursor: pointer;
+  height:10px;
+  background-color: #F9CB17;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 700;
+  line-height: 0px;
+  transition: ease-out 0.7s;
+  transition: 1s;
+  margin-top: 10px;
+  font-family : inherit;
+  font-size: 1em;
+  :hover{
+    background: rgb(249,203,23);
+background: linear-gradient(170deg, rgba(249,203,23,1) 0%, rgba(255,238,174,1) 70%);   }
 `
 
-const Container = styled.div`
+const Details = styled.div`
+    font-family: 'DM Sans', sans-serif;
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 20px;
-    width: 1600px;
-    height: 1100px;
-    background: rgb(226,240,249);
-    background: linear-gradient(180deg, rgba(226,240,249,1) 0%, rgba(248,244,241,1) 70%);
+    gap:100px;
+
+    div.title{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        h2{
+            font-weight: 500;
+        }
+    }
+    h3{
+        margin: -10px;
+        font-weight: 400;
+    }
 `
 
 export default Main

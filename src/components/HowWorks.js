@@ -61,6 +61,28 @@ const HowWorks = () => {
   )
 }
 
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+const Text = styled.div`
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    h1{
+        font-weight: 700;
+        font-size: 45px;
+    }
+    h3{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+    }
+`
+
 const Cards = styled.div`
     display: flex;
     gap: 25px;
@@ -104,25 +126,4 @@ const Cards = styled.div`
     }
 `
 
-const Text = styled.div`
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 30px;
-    h1{
-        font-weight: 700;
-        font-size: 45px;
-    }
-    h3{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 400;
-    }
-`
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
 export default HowWorks

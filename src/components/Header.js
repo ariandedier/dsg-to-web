@@ -39,6 +39,7 @@ const Head = styled.div`
   div.logo{
     display: flex;
     align-items: center;
+    gap:5px;
       h1{
         font-weight: 700;
       }
@@ -53,6 +54,13 @@ const Head = styled.div`
     h3{
       cursor: pointer;
       font-weight: 500;
+      transition: ease-out 0.3s;
+      padding: 7px;
+      border-radius: 10px;
+      :hover{
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 `
@@ -67,9 +75,10 @@ const Button = styled.button`
   font-weight: 700;
   line-height: 0px;
   transition: ease-out 0.3s;
+  font-family : inherit;
+  font-size: 1em;
   :hover{
     background-color: #FFE600;
-
   }
 `
 

@@ -3,8 +3,10 @@ import Header from './components/Header'
 import Main from "./components/Main";
 import HowWorks from "./components/HowWorks";
 import GetStarted from "./components/GetStarted";
+import ScrollToTopBtn from "./components/ScrollToTop";
 
 function App() {
+  
   return (
     <Container>
 
@@ -12,6 +14,7 @@ function App() {
       <Main/>
       <HowWorks/>
       <GetStarted/>
+      <ScrollToTopBtn/>
 
     </Container>
   );

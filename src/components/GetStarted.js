@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const GetStarted = () => {
   return (
-    <Container>
+    <Container id='getstarted'>
 
       <Title>
         <h1>Get Started</h1>
@@ -51,7 +51,7 @@ const GetStarted = () => {
 
 const Container = styled.div`
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: -150px;
     display: flex;
     flex-direction: column;
     align-self: center;

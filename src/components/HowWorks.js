@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HowWorks = () => {
   return (
-    <Container>
+    <Container id='howworks'>
         <Text>
             <h1>How it Works</h1>
             <h3>We'll turn your Figma, XD or Sketch file into a pixel perfect<br/>

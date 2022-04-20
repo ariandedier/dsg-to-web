@@ -89,6 +89,7 @@ const Cards = styled.div`
     margin-top: 50px;
 
     div.card{
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -102,6 +103,12 @@ const Cards = styled.div`
         line-height: 25px;
         -webkit-box-shadow: 0px 9px 15px -5px rgba(0,0,0,0.5); 
         box-shadow: 0px 9px 15px -5px rgba(0,0,0,0.5);
+        transition: ease-out 0.3s;
+
+        :hover{
+            background: linear-gradient(326deg, rgba(255,225,107,1) 0%, rgba(255,249,227,1) 70%); 
+        }
+
         h3{
             font-weight: 400;
         }

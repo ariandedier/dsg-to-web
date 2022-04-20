@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import {BsCheckCircleFill} from 'react-icons/bs'
 
 const Main = () => {
   return (
     <Container>
-
+        
+        <TitleForm>
         <Text>
             <h1>We turn your design<br/>into a live webflow<br/>project</h1>
             <h3>You've invested time and money into your design fies.<br/>
@@ -44,10 +46,80 @@ const Main = () => {
             </div>
             <Button>Submit your request</Button>
         </Form>
+        </TitleForm>
+        
+        <Details>
+            <div className='detail'>
+                <div className='title'>
+                    <BsCheckCircleFill color='#F9CB17' size={25}/>
+                    <h2>No headaches</h2>
+                </div>
+                <h3>You don't have to worry about<br/>
+                going back and forth with the<br/>
+                design team, because we'll get it<br/>
+                right the first time.
+                </h3>
+            </div>
+            <div className='detail'>
+                <div className='title'>
+                    <BsCheckCircleFill color='#F9CB17' size={25}/>
+                    <h2>Detail-oriented</h2>
+                </div>
+                <h3>We adore pixels! We obsess over<br/>
+                them and understand the effort it<br/>
+                takes to make a website beautiful.
+                </h3>
+            </div>
+            <div className='detail'>
+                <div className='title'>
+                    <BsCheckCircleFill color='#F9CB17' size={25}/>
+                    <h2>Simple and accurate</h2>
+                </div>
+                <h3>We devote a lot of attention to<br/>
+                design details, communication,<br/>
+                timelines and project management.
+                </h3>
+            </div>
+            <div className='detail'>
+                <div className='title'>
+                    <BsCheckCircleFill color='#F9CB17' size={25}/>
+                    <h2>Fast delivery</h2>
+                </div>
+                <h3>We've been using Webflow for<br/>
+                years and know how to build<br/>
+                extremely complex and beautiful<br/>
+                designs in record time.
+                </h3>
+            </div>
+        </Details>
 
     </Container>
   )
 }
+
+const Details = styled.div`
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    gap:100px;
+
+    div.title{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        h2{
+            font-weight: 500;
+        }
+    }
+    h3{
+        margin: -10px;
+        font-weight: 400;
+    }
+`
+
+const TitleForm = styled.div`
+    display: flex;
+    padding: 40px;
+`
 
 const Button = styled.button`
   cursor: pointer;
@@ -58,16 +130,18 @@ const Button = styled.button`
   padding: 20px;
   font-weight: 700;
   line-height: 0px;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.7s;
+  transition: 1s;
   margin-top: 10px;
   font-family : inherit;
   font-size: 1em;
   :hover{
-    background-color: #FFE600;
-  }
+    background: rgb(249,203,23);
+background: linear-gradient(170deg, rgba(249,203,23,1) 0%, rgba(255,238,174,1) 70%);   }
 `
 
 const Form = styled.div`
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -75,7 +149,6 @@ const Form = styled.div`
     height: 720px;
     background-color: #fff;
     border-radius: 10px;
-    font-family: 'DM Sans', sans-serif;
     padding: 20px;
     gap:10px;
 
@@ -120,17 +193,18 @@ const Text = styled.div`
     h3{
         font-family: 'DM Sans', sans-serif;
         font-weight: 400;
-    }
+        }
 `
 
 const Container = styled.div`
     display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
     width: 1600px;
-    height: 800px;
+    height: 1100px;
     background: rgb(226,240,249);
     background: linear-gradient(180deg, rgba(226,240,249,1) 0%, rgba(248,244,241,1) 70%);
 `
